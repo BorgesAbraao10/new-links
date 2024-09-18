@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Input } from "../../components/Input";
 
 export function Login() {
   return (
@@ -8,6 +9,16 @@ export function Login() {
           Dev<span className="bg-gradient-to-r from-yellow-500">LinK</span>
         </h1>
       </Link>
+
+      <form className="w-full max-w-xl flex flex-col px-2">
+        <Input />
+        <button
+          type="submit"
+          className="h-9 bg-blue-600 rounded border-0 text-lg font-medium text-white "
+        >
+          Acessar
+        </button>
+      </form>
     </div>
   );
 }
